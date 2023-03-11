@@ -25,6 +25,11 @@
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Hello, World!" id="8kZ-0K-8VZ">
+                                        <barButtonItem key="leftBarButtonItem" title="Reset" id="lqw-Cd-joo">
+                                            <connections>
+                                                <action selector="resetAction:" destination="BYZ-38-t0r" id="Qv5-2f-MPd"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Shuffle" id="Swq-vq-eAR">
                                             <connections>
                                                 <action selector="shuffleAction:" destination="BYZ-38-t0r" id="kKh-xJ-66w"/>

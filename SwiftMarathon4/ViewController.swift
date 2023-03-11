@@ -40,6 +40,11 @@ class ViewController: UIViewController {
         self.applySnapshot()
     }
     
+    @IBAction func resetAction(_ sender: Any) {
+        self.items = (0...35).map { TableItem(number: $0) }
+        self.applySnapshot()
+    }
+    
     private func applySnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<ViewControllerSection, TableItem>()
         snapshot.appendSections([.main])
